@@ -1,0 +1,140 @@
+/* This style is for the body of the Benefactor */
+#Benefactors
+{
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+}
+
+/* This is for the heading */
+#Benefactors > .h2-heading
+{
+    clear: both;
+    margin: 40px 0px 10px 10px;
+}
+
+/* This part is for the container of the elements */
+#Benefactors > .container-box
+{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* controls the elements */
+#Benefactors > .container-box > .control
+{
+    display: inline-block;
+    /* text-align: center; */
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+/* Style the elements in the container */
+#Benefactors > .container-box > .control > .element
+{
+    max-width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+/* Style the elements in the container hover effect */
+#Benefactors > .container-box > .control > .element:hover,.element:active,.element:focus
+{
+    opacity: 0.5;
+}
+
+/* Stle the image in the elements */
+#Benefactors > .container-box > .control > .element > a > img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Stle the word in the elements */
+#Benefactors > .container-box > .control > .control1
+{
+    /* text-align: center; */
+    word-wrap: none;
+    line-break: strict;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    width: 50px;
+    height: auto;
+}
+
+/* word size */
+.word
+{
+    font-size: 9.69px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+}
+
+/* for screen size greater than 460px */
+@media only screen and (min-width: 460px)
+{
+    /* controls the elements */
+    #Benefactors > .container-box > .control
+    {
+        width: 150px;
+    }
+
+    /* Style the elements in the container */
+    #Benefactors > .container-box > .control > .element
+    {
+        max-width: 90px;
+        height: 90px;
+    }
+
+    /* Stle the word in the elements */
+    #Benefactors > .container-box > .control > .control1
+    {
+        width: 150px;
+    }
+
+    /* word size */
+    .word
+    {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+/* for screen size greater than 768px */
+@media only screen and (min-width: 768px)
+{
+    /* controls the elements */
+    #Benefactors > .container-box > .control
+    {
+        width: 200px;
+    }
+
+    /* Style the elements in the container */
+    #Benefactors > .container-box > .control > .element
+    {
+        max-width: 120px;
+        height: 120px;
+    }
+
+    /* Stle the word in the elements */
+    #Benefactors > .container-box > .control > .control1
+    {
+        width: 200px;
+    }
+
+    /* word size */
+    .word
+    {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}

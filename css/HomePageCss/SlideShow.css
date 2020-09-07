@@ -1,0 +1,209 @@
+/* This styles the slide show */
+
+
+/* this is to style the For-You-Slide to fit the screen */
+
+#For-You-Slide 
+{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 100px;
+    padding: 0px;
+    width: 100%;
+    height: 350px;
+    overflow: visible;
+    position: relative;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3), 0px 8px 7.5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* this style the image container */
+
+#For-You-Slide > .container 
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/* This sets the size of the image */
+
+#For-You-Slide > .container > a > img 
+{
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+/* styling the next and previous botton */
+#For-You-Slide > .prev, .next
+{
+    position: absolute;
+    background-color: transparent;
+    margin: 0px;
+    padding: 5px 7.5px;
+    top: 50%;
+    cursor: pointer;
+    transition: background-color 1.5s;
+}
+
+/* styling the next and previous botton hover effect */
+#For-You-Slide > .prev:hover, .next:hover
+{
+    background-color: #d9d7ec80;
+}
+
+/* styling the next and previous botton active effect */
+#For-You-Slide > .prev:active, .next:active
+{
+    background-color: #d9d7eccb;
+}
+
+/* positioning the next botton */
+#For-You-Slide > .next
+{
+    right: 0px;
+}
+
+/* positioning the prev botton */
+#For-You-Slide > .prev
+{
+    left: 0px;
+}
+
+/* position the text1(product name) in slider */
+#For-You-Slide > .container > .text1
+{
+    position: absolute;
+    top: 3%;
+    left: 7.5px;
+    background-color: #b65b2d;
+    margin: 0px;
+    padding: 3px;
+    border-radius: 7.5px;
+}
+
+/* position the text1(product name) in slider */
+#For-You-Slide > .container > .text1 > a
+{
+    color: #ffffff;
+}
+
+/* position the text1(product name) in slider hover effect */
+#For-You-Slide > .container > .text1 > a:hover
+{
+    text-decoration: underline;
+}
+
+/* stule and position this text in the center */
+#For-You-Slide > .container > .text-div > .my-text
+{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    color: #ffffff;
+}
+
+/* position the text2(product link) in slider */
+#For-You-Slide > .container > .text2
+{
+    background-color: #b65b2d;
+    position: absolute;
+    top: 3%;
+    right: 7.5px;
+    margin: 0px;
+    padding: 3px;
+    border-radius: 7.5px;
+}
+
+/* position the text2(product link) in slider */
+#For-You-Slide > .container > .text2 > a
+{
+    color: #ffffff;
+}
+
+/* just creates a dash between the two texts */
+#For-You-Slide > .container > .text2 > .dash
+{
+    padding-left: 10px;
+    border-left: 1px solid rgba(50, 50, 50, 1);
+}
+
+/* position the text2(product link) in slider hover effect */
+#For-You-Slide > .container > .text2 > a:hover
+{
+    text-decoration: underline;
+}
+
+/* position the text2(product link) in slider */
+#For-You-Slide > .container > .text2 > a
+{
+    margin-right: 3px;
+}
+
+/* styling the center text botton */
+#For-You-Slide > .center-text
+{
+    background-color: rgba(182, 91, 45, 0.5);
+    position: absolute;
+    margin: 0px;
+    padding: 4px;
+    top: 80%;
+    right: 30%;
+    left: 30%;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+/* styling the center text botton hover effect */
+#For-You-Slide > .center-text > a
+{
+    color: #ffffff;
+}
+
+/* styling the center text botton hover effect */
+#For-You-Slide > .center-text:hover
+{
+    background-color: rgba(182, 91, 45);
+    transition: background-color 0.5s;
+}
+
+/* this style will make the image fade in */
+.fade
+{
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+/* this style will make the image fade in */
+@keyframes fade
+{
+    from {  opacity: 0.2;}
+    to {    opacity: 1;}
+}
+
+/* css for when screen width goes below 500px */
+@media only screen and (min-width: 500px)
+{
+    /* this is to style the For-You-Slide to fit the screen */
+    #For-You-Slide 
+    {
+        height: 450px;
+    }
+
+    /* stule and position this text in the center */
+    #For-You-Slide > .container > .text-div > .my-text
+    {
+        position: absolute;
+        top: 40%;
+        right: 35%;
+    }
+
+    /* styling the center text botton */
+    #For-You-Slide > .center-text
+    {
+        right: 40%;
+        left: 40%;
+    }
+}

@@ -1,0 +1,90 @@
+/* Give image to background image 1 */
+.background-image1
+{
+    background-image: url("/images/Models/image5.jpg");
+}
+
+/* Give image to background image 2 */
+.background-image2
+{
+    background-image: url("/images/Models/felipe-galvan-AhfrA5VQNpM-unsplash.jpg");
+}
+
+/* Give image to background image 3 */
+.background-image3
+{
+    background-image: url("/images/Models/image17.jpg");
+}
+
+/* Give image to background image 4 */
+.background-image4
+{
+    background-image: url("/images/Models/image8.jpg");
+}
+
+/* style the background image */
+#Background
+{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    margin: 10px 0px;
+    padding: 15%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 490px;
+    background-clip: border-box;
+    background-attachment: local;
+}
+
+/* style the text to be considered */
+.consider
+{
+    font-size: 24px;
+    margin: 70px 0px 0px 20px;
+    padding: 0px;
+}
+
+/* style the heading of the text */
+#Background > .h2-heading
+{
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+/* style the text content */
+#Background > .p-text
+{
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+/* style the link */
+#Background > .span-text > a
+{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* style the link on hover and focus */
+#Background > .span-text > a:hover,a:focus
+{
+    color: #b65b2d;
+}
+
+/* css for when screen width goes above 905 */
+@media only screen and (min-width: 903px)
+{
+    /* css for when screen width goes above 905 */
+    @media only screen and (min-width: 903px)
+    {
+        .font1
+        {
+            font-size: 36px;
+        }
+    }
+}

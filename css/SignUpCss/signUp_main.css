@@ -1,0 +1,181 @@
+/* before stlying */
+
+/* Style fieldSet*/
+.field-set
+{
+    margin: 40px 10px 10px 10px;
+    padding: 30px;
+    border-radius: 7px;
+    border: 1px solid rgba(182, 91, 45, 1);
+}
+
+/* style th legend topic */
+legend
+{
+    text-align: center;
+}
+
+select
+{
+    color: #ffffff;
+    width: 70%; 
+    margin: 10px 0px; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: rgba(182, 91, 45, 0.5); 
+}
+
+option
+{
+    width: 70%; 
+    margin: 10px 0px; 
+    padding: 10px; 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+input:focus{outline: none;}
+select:focus{outline: none;}
+::placeholder{color: #ffffff;}
+
+/*  */
+/* The text for sign up  */
+#Sign-Up-text
+{
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+}
+
+/* Sign up div styling */
+#Sign-Up
+{
+    margin: 10px 0px 50px 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* Style the sine up input form */
+#Sign-Up > form > .field-set > input
+{
+    color: #ffffff;
+    width: 70%; 
+    margin: 10px 0px; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: rgba(182, 91, 45, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* horizontal line */
+#Sign-Up > form > .field-set > hr
+{
+    text-align: center;
+    width: 70%;
+    margin: 10px 0px;
+    border: 1px solid rgba(182, 91, 45, 0.5);
+}
+
+/*  */
+/* Sign-up-others */
+#Sign-up-others
+{
+    margin: 10px 0px 50px 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* field set */
+#Sign-up-others > .field-set
+{
+    text-align: center;
+}
+
+/* legend */
+#Sign-up-others > .field-set > legend
+{
+    text-align: left;
+}
+
+/* other way to sign in */
+.other-sign-up
+{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgba(182, 91, 45, 0.5);
+    border-radius: 7px;
+    transition: background-color 0.2s;
+}
+
+/* other way to sign in */
+.other-sign-up:hover
+{
+    background-color: #b65b2d;
+}
+
+/* style the horizontal line */
+#Sign-up-others > .field-set > hr
+{
+    width: 100%;
+    margin: 40px 0px 20px 0px;
+    border: 1px solid rgba(182, 91, 45, 0.5);
+}
+
+/* style the image */
+#Sign-up-others > .field-set > .other-sign-up > a > img
+{
+    width: 20%;
+    height: 45px;
+    border-radius: 7px;
+}
+
+/* submit div body */
+.submit
+{
+    text-align: center;
+    margin: 50px;
+}
+
+/* submit button */
+.submit > input[type=submit]
+{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 200px;
+    background-color: rgba(182, 91, 45, 0.5);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+}
+
+/* submit button horver effect */
+.submit > input[type=submit]:hover
+{
+    background-color: rgba(182, 91, 45, 1);
+}
+
+/* Product displaying on screen */
+#Product-Display{display: none;}
+
+/*  */
+/* css for when screen width goes above 905 */
+@media only screen and (min-width: 903px)
+{
+    #Product-Display{display: block;}
+    #Product-display > .card-body{z-index: -1;}
+    /* Sign up div styling */
+    #Sign-Up
+    {
+        float: left;
+        width: 50%;
+    }
+
+    /* The text for sign up  */
+    #Sign-Up-text
+    {
+        text-align: left;
+        margin: 40px 0px 0px 19%;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,218 @@
+/* Footer for the home page */
+#Footer
+{
+    width: 100%;
+    height: 500px;
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+}
+
+/* This is the top footer's styling */
+#Footer > .top-footer
+{
+    width: 100%;
+    height: 45%;
+    padding: 50px 0px;
+}
+
+/* This is for the section of top footer */
+#Footer > .top-footer > .section
+{
+    text-align: center;
+    width: 33.33333%;
+    height: auto;
+    display: inline-block;
+}
+
+/* This is for the a of section of top footer */
+#Footer > .top-footer > .section > a
+{
+    display: block;
+    background-color: transparent;
+    font-size: 11px;
+    margin: 10px;
+    padding: 5px;
+    transition: background-color 0.4s ease;
+    border-radius: 5px;
+}
+
+/* This is for the a of section of top footer effect for hover, active, and focus */
+#Footer > .top-footer > .section > a:hover,a:active,a:focus
+{
+    color: #ffffff;
+    background-color: #b65b2d;
+}
+
+/*  */
+/* This is the bottom footer's styling */
+#Footer > .bottom-footer
+{
+    text-align: center;
+    width: 100%;
+    height: 45%;
+    padding: 50px 0px;
+}
+
+/* stling the feedback section */
+#Footer > .bottom-footer > .feed-back
+{
+    margin-bottom: 2%;
+}
+
+/* stling the feedback section */
+#Footer > .bottom-footer > .feed-back > a
+{
+    text-align: center;
+    background-color: transparent;
+    display: block;
+    margin: 0px 20%;
+    padding: 11px 0px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 4px dotted #b65b2d;
+}
+
+/* styling the feedback section effectes */
+#Footer > .bottom-footer > .feed-back > a:hover,a:active,a:focus
+{
+    color: #ffffff;
+    background-color: #b65b2d;
+}
+
+/* This will styling the social medial div */
+#Footer > .bottom-footer > .social-media
+{
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+/* This will styling the social medial images */
+#Footer > .bottom-footer > .social-media > a > img
+{
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+/* This will styling the social medial images */
+#Footer > .bottom-footer > .social-media > a > img:hover,img:active,img:focus
+{
+    opacity: 0.4;
+}
+
+/* 😊am going to end it */
+#Footer > .bottom-footer > .end-it
+{
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #d9d7ec;
+}
+
+/* styling the end-it > setting div */
+#Footer > .bottom-footer > .end-it > .setting
+{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* styling the setting div img */
+#Footer > .bottom-footer > .end-it > .setting > img
+{
+    width: 20px;
+    height: 20px;
+    margin: -5px 0px;
+    border-radius: 50%;
+}
+
+/* styling the setting div span */
+#Footer > .bottom-footer > .end-it > .setting > span
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 9px;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* 😁am rounding up */
+#Footer > .bottom-footer > .round-up
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: #d9d7ec;
+}
+
+/* round up span */
+#Footer > .bottom-footer > .round-up > span
+{
+    margin: 0px 3px;
+    font-size: 9px;
+}
+
+/* round up a */
+#Footer > .bottom-footer > .round-up > a
+{
+    text-decoration: underline;
+    margin: 0px 3px;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+/*  */
+/* for screen size greater than 500px */
+@media only screen and (min-width: 500px)
+{
+    /* This is for the a of section of top footer */
+    #Footer > .top-footer > .section > a
+    {
+        font-size: 14px;
+    }
+
+    /* This will styling the social medial images */
+    #Footer > .bottom-footer > .social-media > a > img
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* styling the setting div img */
+    #Footer > .bottom-footer > .end-it > .setting > img
+    {
+        width: 30px;
+        height: 30px;
+        margin: -9px 0px;
+    }
+
+    /* styling the setting div span */
+    #Footer > .bottom-footer > .end-it > .setting > span
+    {
+        font-size: 12px;
+    }
+
+    /* round up span */
+    #Footer > .bottom-footer > .round-up > span
+    {
+        margin: 0px 7px;
+        font-size: 11px;
+    }
+
+    /* round up a */
+    #Footer > .bottom-footer > .round-up > a
+    {
+        margin: 0px 6px;
+        font-size: 12px;
+    }
+}

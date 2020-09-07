@@ -1,0 +1,206 @@
+/* styles the side nav for heading aand also for card */
+#Side-Nav,.Side-Nav
+{
+    position: absolute;
+    top: 120px;
+    display: none;
+    padding: 16px;
+    width: 0px;
+    height: 500px;
+    /* overflow: hidden;s */
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(182, 91, 45, 0.5);
+    /* border-bottom-left-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    /* transition: width 0.5s; */
+}
+
+/* only .side-nav */
+.Side-Nav
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+}
+
+/* style nav for only card */
+.Side-Nav
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    height: 500px;
+}
+
+/* styles the side nav focus effect */
+#Side-Nav:focus,.Side-Nav:focus
+{
+    transition: width 0.5s;
+}
+
+/* style the side navigation */
+#Side-Nav a,.Side-Nav a
+{
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(182, 91, 45, 0.3);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* style the side navigation hover effect */
+#Side-Nav > a:hover,.Side-Nav > a:hover
+{
+    border-bottom: 1px solid #ffffff;
+}
+
+/* style the side navigation active effect */
+#Side-Nav > a:active,.Side-Nav > a:active
+{
+    border-bottom: 1px solid #ffffff;
+}
+
+/* style the side navigation focus effect */
+#Side-Nav > a:focus,.Side-Nav > a:focus
+{
+    border-bottom: 1px solid #ffffff;
+}
+
+/* style the side nav close button */
+#Side-Nav > .closebtn,.Side-Nav > .closebtn
+{
+    margin: 10px 0px 50px 0px;
+    padding: 7px;
+    font-size: 30px;
+    background-color: rgba(182, 91, 45, 0.5);;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+/* style the side nav close button hover effect*/
+#Side-Nav > .closebtn:hover, .closebtn:active, .closebtn:focus, .Side-Nav > .closebtn:hover, .closebtn:active, .closebtn:focus
+{
+    color: #000;
+    background-color: rgba(182, 91, 45, 1);;
+}
+
+/* make a circle */
+#Side-Nav > .circle
+{
+    position: absolute;
+    bottom: 28;
+    right: 65;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/* styling the log out */
+#Side-Nav > .log-out
+{
+    position: absolute;
+    bottom: 20;
+    right: 15;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+/* styling the log out hover effect */
+#Side-Nav > .log-out:hover
+{
+    border: none;
+    color: #ffffff;
+    background-color: #b65b2d;
+}
+
+/* hide this nav from small screen */
+#Horizontal-nav
+{
+    display: none;
+}
+
+/*  */
+/* css for when screen width goes above 905 */
+@media only screen and (min-width: 903px)
+{
+    /* show this nax only at large screen */
+    #Horizontal-nav
+    {
+        position: fixed;
+        top: -50;
+        display: inline-block;
+        z-index: 1;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        background-color: rgba(182, 91, 45, 1);
+        transition: top 0.4s, opacity 0.3s;
+    }
+
+    #Horizontal-nav:hover
+    {
+        opacity: 1;
+    }
+
+    /* style its elements */
+    #Horizontal-nav > a
+    {
+        color: #ffffff;
+        display: inline-block;
+        margin: 0px 20px;
+        padding: 5px;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.7s;
+    }
+
+    /* style its elements hover effect*/
+    #Horizontal-nav > a:hover,a:active,a:focus
+    {
+        border-bottom: 2px solid #ffffff;
+    }
+
+    /* make a circle */
+    #Horizontal-nav > .circle
+    {
+        display: inline-block;
+        margin: 7px 0px 0px 0px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    /* styling the log out */
+    #Horizontal-nav > .log-out
+    {
+        margin: 0px;
+        padding: 5px;
+        border-radius: 20px;
+        border: none;
+        background-color: transparent;
+        transition: background-color 0.3s;
+    }
+
+    /* styling the log out hover effect */
+    #Horizontal-nav > .log-out:hover
+    {
+        border: none;
+        color: #ffffff;
+        background-color: #b65b2d;
+    }
+}
